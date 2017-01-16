@@ -11,7 +11,7 @@ class OctopusManagerPage extends React.Component {
               field="searchs"
               label="Searchs"
               name="searchs"
-              value="Search For You"
+              value="Search For You 2.0"
             />
           </div>
           <div className="col-md-4 col-md-offset-4">
