@@ -12,7 +12,7 @@ class OctopusManagerForm extends React.Component {
           value="title name"
         />
         <div className="form-group">
-          <button className="btn btn-primary btn-lg">Octopus Releases - Client 1.0</button>
+          <button className="btn btn-primary btn-lg">Octopus Releases - Client 2.0</button>
         </div>
       </form>
     );
