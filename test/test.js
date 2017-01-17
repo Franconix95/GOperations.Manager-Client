@@ -4,10 +4,11 @@ var should = require("should");
 var server = supertest.agent("http://localhost:3000");
 // UNIT test begin
 describe("SAMPLE unit test",function(){
-
   // #1 should return home page
   it("should return home page",function(done){
     // calling home page
+    server = supertest.agent("http://localhost:3000");
+    console.log(server);
     server
     .get("/")
     .expect("Content-type",/text/)
@@ -18,5 +19,19 @@ describe("SAMPLE unit test",function(){
       done();
     });
   });
+  /*it("should go to login",function(done){
+    server = supertest.agent("http://localhost:3000/login");
+    // calling home page
+    console.log(server);
+    server
+    .get("/")
+    .expect("Content-type",/text/)
+    .expect(200) // THis is HTTP response
+    .end(function(err,res){
+      // HTTP status should be 200
+      res.status.should.equal(200);
+      done();
+    });
+  });*/
 
 });
